@@ -24,7 +24,7 @@
   "dependencies": {
     "async": "^1.5.2",
     "debug": "^2.2.0",
-    "joi": "6.10.1",
+    "joi": "8.1.0",
     "lodash.assign": "^4.0.9",
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
