@@ -29,7 +29,8 @@
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
     "semver": "^5.3.0",
-    "sequelize": "^3.23.6"
+    "sequelize": "^3.23.6",
+    "snyk": "^1.189.0"
   },
   "devDependencies": {
     "blanket": "^1.2.3",
@@ -53,7 +54,9 @@
     "coverage": "./node_modules/mocha/bin/mocha --timeout 20000 --require blanket --reporter html-cov ./test/*.js > coverage.html || true",
     "complexity": "./node_modules/plato/bin/plato -r -d complexity lib",
     "performance": "node --allow-natives-syntax --harmony ./node_modules/mocha/bin/_mocha --reporter mocha-performance ./test/*.js",
-    "lint": "./node_modules/.bin/eslint ./example/*.js ./lib/* ./test/*.js --quiet && echo '✔ All good!'"
+    "lint": "./node_modules/.bin/eslint ./example/*.js ./lib/* ./test/*.js --quiet && echo '✔ All good!'",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "config": {
     "blanket": {
@@ -63,5 +66,6 @@
         "test"
       ]
     }
-  }
+  },
+  "snyk": true
 }
