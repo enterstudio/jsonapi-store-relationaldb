@@ -23,13 +23,13 @@
   },
   "dependencies": {
     "async": "^1.5.2",
-    "debug": "^2.2.0",
+    "debug": "^3.1.0",
     "joi": "6.10.1",
     "lodash.assign": "^4.0.9",
     "lodash.omit": "^4.3.0",
     "lodash.pick": "^4.2.1",
     "semver": "^5.3.0",
-    "sequelize": "^3.23.6"
+    "sequelize": "^5.1.0"
   },
   "devDependencies": {
     "blanket": "^1.2.3",
